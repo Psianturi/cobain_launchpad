@@ -8,8 +8,8 @@ class BlockchainService {
   BlockchainService() {
     Client httpClient = Client();
     _client = Web3Client(
-        // 'https://mainnet.infura.io/v3/a3afa86728a2458089b75a54fb1717e8', httpClient);
-        'https://goerli.infura.io/v3/a3afa86728a2458089b75a54fb1717e8', httpClient);
+        // '', httpClient);
+        'key', httpClient);
   }
 
   Future<EtherAmount> getBalance(String address) async {
